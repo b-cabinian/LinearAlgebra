@@ -8,10 +8,20 @@ using namespace cs_linear;
 
 int main()
 {
+    Complex<int> y;
     Complex<int> z; 
 
-    std::cout << "This is z = ";
+    y.setRe(1);
+    y.setIm(-2);
+    std::cout << "y = ";
+    y.printRect();
+    std::cout << std::endl;
+
+    std::cout << "z = ";
     z.printRect();
+    std::cout << std::endl;
+
+
 }
 
 

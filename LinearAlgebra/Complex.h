@@ -17,9 +17,9 @@ namespace cs_linear
         void setIm(const value_type& t_im);
         value_type getRe() const;
         value_type getIm() const;
-        Complex operator+(const Complex& right) const;
-        Complex operator-(const Complex& right) const;
-        Complex operator*(const Complex& right) const;
+        Complex operator+(const Complex& rhs) const;
+        Complex operator-(const Complex& rhs) const;
+        Complex operator*(const Complex& rhs) const;
         void printRect() const;
     private:
         value_type real_;

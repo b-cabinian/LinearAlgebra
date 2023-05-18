@@ -72,9 +72,9 @@ namespace cs_linear {
 
 
     template <class T>
-    Complex<T> Complex<T>::operator+(const Complex& right) const
+    Complex<T> Complex<T>::operator+(const Complex& rhs) const
     {
-        return Complex(real_ + right.real_, im_ + right.im_);
+        return Complex(real_ + rhs.real_, im_ + rhs.im_);
     }
 
 
@@ -83,9 +83,9 @@ namespace cs_linear {
 
 
     template <class T>
-    Complex<T> Complex<T>::operator-(const Complex& right) const
+    Complex<T> Complex<T>::operator-(const Complex& rhs) const
     {
-        return Complex(real_ - right.real_, im_ - right.im_);
+        return Complex(real_ - rhs.real_, im_ - rhs.im_);
     }
 
 
@@ -94,10 +94,10 @@ namespace cs_linear {
 
 
     template <class T>
-    Complex<T> Complex<T>::operator*(const Complex& right) const
+    Complex<T> Complex<T>::operator*(const Complex& rhs) const
     {
-        return Complex((real_ * right.real_) + (im_ * right.im_),
-            (im_ * right.real_) + (real_ * right.im_));
+        return Complex((real_ * rhs.real_) + (im_ * rhs.im_),
+            (im_ * rhs.real_) + (real_ * rhs.im_));
     }
 
 
